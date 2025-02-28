@@ -21,5 +21,20 @@ services:
       - ./.env
     restart: unless-stopped  
 
+  fastapi:
+    build: .
+    container_name: wordrix-api
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./.env
+    volumes:
+     - .:/app
+    command: ["fastapi", "run", "app/main.py", "--port", "8000"]
+
+
 volumes:
   postgres_data:
