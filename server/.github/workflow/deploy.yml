@@ -18,7 +18,7 @@ jobs:
       with:
         host: ${{ secrets.VPS_HOST }}
         username: ${{ secrets.VPS_USER }}
-        key: ${{ secrets.VPS_PR_KEY }}
+        key: ${{ secrets.SSH_PR_KEY }}
         script: |
           cd wordix/server/
           git pull origin main
