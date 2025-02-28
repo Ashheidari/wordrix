@@ -1,0 +1,578 @@
+English,Spanish
+Apple,Manzana
+Apricot,Albaricoque
+Avocado,Aguacate
+Banana,Platano
+Bilberry,Arandano (negro)
+Blackberry,Mora
+Blackcurrant,Grosella negra
+Blueberry,Arandano
+Boysenberry,Baya de boysen (boysenberry)
+Currant,Grosella
+Cherry,Cereza
+Cloudberry,Mora de los pantanos
+Coconut,Coco
+Cranberry,Arandano rojo
+Cucumber,Pepino
+Damson,Ciruela damascena
+Date,Datil
+Dragonfruit,Pitahaya / Fruta del dragon
+Durian,Durian
+Elderberry,Bayas de sauco
+Feijoa,Feijoa
+Fig,Higo
+Gooseberry,Uva espina
+Grape,Uva
+Raisin,Pasa
+Grapefruit,Pomelo / Toronja
+Guava,Guayaba
+Huckleberry,Arandano (negro)
+Jackfruit,Yaca
+Jambul (Jamun),Jambolan / Jambul
+Jujube,Azufaifo
+Kiwifruit,Kiwi
+Kumquat,Kumquat
+Lemon,Limon
+Lime,Lima
+Loquat,Nispero
+Longan,Longan
+Lychee,Lichi
+Mango,Mango
+Mangosteen,Mangostan
+Marionberry,Zarzamora Marion
+Melon,Melon
+Cantaloupe,Melon cantalupo
+Honeydew,Melon (Honeydew / verde)
+Watermelon,Sandia
+Mulberry,Mora (de morera)
+Nectarine,Nectarina
+Nance,Nance
+Olive,Aceituna
+Orange,Naranja
+Clementine,Clementina
+Mandarine,Mandarina
+Tangerine,Mandarina
+Papaya,Papaya
+Passionfruit,Maracuya
+Peach,Durazno / Melocoton
+Pear,Pera
+Persimmon,Caqui
+Plantain,Platano macho
+Plum,Ciruela
+Prune,Ciruela pasa
+Pineapple,Pina
+Pomegranate,Granada
+Pomelo,Pomelo (similar to toronja)
+Quince,Membrillo
+Raspberry,Frambuesa
+Salmonberry,Salmonberry (mora salmon)
+Rambutan,Rambutan
+Salak (Snake fruit),Salak
+Satsuma,Mandarina satsuma
+Soursop,Guanabana
+Strawberry,Fresa
+Tamarillo,Tomate de arbol
+Tamarind,Tamarindo
+Yuzu,Yuzu
+Aardvark,Cerdo hormiguero
+African Elephant,Elefante africano
+Alligator,Aligator (o caiman)
+Alpine Goat,Cabra alpina
+Antelope,Antilope
+Arctic wolf,Lobo artico
+Armadillo,Armadillo
+Asiatic Lion,Leon asiatico
+Baboon,Babuino
+Badger,Tejon
+Bat,Murcielago
+Bear,Oso
+Bearded Dragon,Dragon barbudo
+Beaver,Castor
+Bison,Bisonte
+Bobcat,Lince rojo (EE. UU.)
+Bulbul,Bulbul (ave)
+Bull,Toro
+Bull shark,Tiburon toro
+Camel,Camello
+Caracal,Caracal
+Chameleon,Camaleon
+Cheetah,Guepardo
+Chihuahua,Chihuahua
+Chimpanzee,Chimpance
+Chinchillas,Chinchillas
+Chipmunk,Ardilla listada
+Comodo Dragon,Dragon de Komodo
+Coyote,Coyote
+Crocodile,Cocodrilo
+Deer,Ciervo
+Dinosaur,Dinosaurio
+Donkey,Burro
+Eagle,Aguila
+Eel,Anguila
+Elephant,Elefante
+Elk (Wapiti),Uapiti
+Emperor Penguin,Pinguino emperador
+Emu,Emu
+Falcon,Halcon
+Flying Squirrel,Ardilla voladora
+Giant Panda,Oso panda gigante
+Giraffe,Jirafa
+Goose,Ganso
+Guinea pig,Cuy / Conejillo de Indias
+Hare,Liebre
+Hawk,Halcon (o gavilan)
+Hedgehog,Erizo
+Hippopotamus,Hipopotamo
+Horse,Caballo
+Hyena,Hiena
+Ibex,Cabra montes
+Ibis,Ibis
+Iguana,Iguana
+Jackal,Chacal
+Jaguar,Jaguar
+Jellyfish,Medusa
+Kangaroo,Canguro
+King Cobra,Cobra real
+Koala bear,Koala
+Leopard,Leopardo
+Lion,Leon
+Marten,Marta
+Meerkat,Suricata
+Mole,Topo
+Mongoose,Mangosta
+Monitor Lizard,Varano
+Monkey,Mono
+Moose,Alce
+Okapi,Okapi
+Orangutan,Orangutan
+Oryx,Orice
+Otter,Nutria
+Owl,Buho / Lechuza
+Panda,Panda
+Pangolin,Pangolin
+Panther,Pantera
+Porcupine,Puercoespin
+Possum,Zarigueya
+Puma,Puma
+Rabbit,Conejo
+Raccoon,Mapache
+Reindeer,Reno
+Rhinoceros,Rinoceronte
+Royal Bengal Tiger,Tigre de Bengala real
+Seal,Foca
+Sheep,Oveja
+Skink,Eslizon
+Squirrel,Ardilla
+Squirrel Monkey,Mono ardilla
+Tiger,Tigre
+Walrus,Morsa
+Wild boar,Jabali
+Wild cat,Gato salvaje
+Wolf,Lobo
+Wombat,Wombat (o wombat)
+Yak,Yak
+Zebra,Cebra
+Tree,Arbol
+Forest,Bosque
+River,Rio
+Ocean,Oceano
+Mountain,Montana
+Hill,Colina
+Valley,Valle
+Lake,Lago
+Stream,Arroyo
+Beach,Playa
+Desert,Desierto
+Jungle,Jungla
+Meadow,Prado / Pradera
+Flower,Flor
+Grass,Hierba
+Leaf,Hoja
+Reef,Arrecife
+Cave,Cueva
+Cliff,Acantilado
+Canyon,Canon
+Field,Campo
+Prairie,Pradera / Llanura
+Tundra,Tundra
+Geyser,Geiser
+Lagoon,Laguna
+Bay,Bahia
+Gulf,Golfo
+Strait,Estrecho
+Island,Isla
+Peninsula,Peninsula
+Archipelago,Archipielago
+Wildlife,Vida silvestre
+Organic,Organico
+Renewable,Renovable
+Sustainable,Sostenible
+Climate,Clima
+Weather,Tiempo (meteor.)
+Season,Estacion
+Spring,Primavera
+Summer,Verano
+Autumn,Otono
+Winter,Invierno
+Nature,Naturaleza
+Earth,Tierra
+Planet,Planeta
+Solar,Solar
+Lunar,Lunar
+Atmosphere,Atmosfera
+Hail,Granizo
+Sleet,Aguanieve
+Storm,Tormenta
+Thunder,Trueno
+Lightning,Rayo (o relampago)
+Cloud,Nube
+Sun,Sol
+Moon,Luna
+Star,Estrella
+Sky,Cielo
+Wind,Viento
+Breeze,Brisa
+Hurricane,Huracan
+Tornado,Tornado
+Volcano,Volcan
+Earthquake,Terremoto
+Plant,Planta
+Bush,Arbusto
+Shrub,Arbusto (sinonimo)
+Vine,Vid
+Reptile,Reptil
+Mammal,Mamifero
+Amphibian,Anfibio
+Ecosystem,Ecosistema
+Habitat,Habitat
+Animal,Animal
+Bird,Ave
+Fish,Pez
+Insect,Insecto
+Environment,Medio ambiente
+Pollution,Contaminacion
+Recycle,Reciclar
+Compost,Compostar
+Soil,Suelo
+Greenhouse,Invernadero
+Swamp,Pantano
+Rain,Lluvia
+Sand,Arena
+Rock,Roca
+Stone,Piedra
+Pebble,Guijarro
+Conservation,Conservacion
+Tsunami,Tsunami
+Glacier,Glaciar
+Iceberg,Iceberg
+Coral,Coral
+Waterfall,Cascada
+Pond,Estanque
+Marsh,Marisma (o pantano)
+Snow,Nieve
+atlantic,atlantico
+tropical,tropical
+Artichoke,Alcachofa
+Adzuki beans,Frijoles adzuki
+Broad beans,Habas
+Mung beans,Frijoles mung (o judias mung)
+Split peas,Guisantes partidos (arvejas partidas)
+Brussels sprouts,Coles de Bruselas
+Cauliflower,Coliflor
+Bok choy,Bok choy (Acelga china)
+Spinach,Espinaca
+Dill,Eneldo
+Oregano,Oregano
+Arugula,Rucula
+Chives,Cebollino
+Spring onion,Cebollin / Cebolla tierna
+Paprika,Pimenton
+Celeriac,Apionabo
+Radish,Rabano
+Potato,Patata / Papa
+Sweetcorn,Maiz dulce
+Zucchini,Calabacin
+Eggplant,Berenjena
+Bean sprouts,Brotes de soja
+Chickpeas,Garbanzos
+Navy beans,Alubias blancas
+Soybeans,Soja
+Cabbage,Col / Repollo
+Celery,Apio
+Chard,Acelga
+Basil,Albahaca
+Fennel,Hinojo
+Parsley,Perejil
+Mushrooms,Hongos / Champinones
+Garlic,Ajo
+Bell pepper,Pimiento
+Radicchio,Radicchio
+Water chestnut,Castana de agua
+Wasabi,Wasabi
+Sweet potato,Batata / Camote
+Butternut squash,Calabaza butternut (moscada)
+Cucumber,Pepino
+Asparagus,Esparragos
+Black beans,Frijoles negros
+Kidney beans,Frijoles rojos (judias rojas)
+Peanuts,Cacahuetes / Mani
+Peas,Guisantes / Arvejas
+Kohlrabi,Colinabo
+Endive,Endibia
+Collard greens,Berza
+Caraway,Alcaravea
+Lavender,Lavanda
+Rosemary,Romero
+Nettles,Ortigas
+Leek,Puerro
+Chili pepper,Chile / Aji
+Rhubarb,Ruibarbo
+Ginger,Jengibre
+Horseradish,Rabano picante
+Yam,Name
+Jerusalem artichoke,Alcachofa de Jerusalen (topinambur)
+Marrow,"Calabacin grande (a veces ""marrow"")"
+Legumes,Legumbres
+Black-eyed peas,Frijoles de ojo negro
+Lentils,Lentejas
+Pinto beans,Frijoles pintos
+Mangetout,Tirabeques
+Savoy cabbage,Col de Saboya
+Kale,Col rizada
+Coriander (Cilantro),Cilantro
+Lemongrass,Hierba de limon
+Thyme,Tomillo
+Okra,Quimbombo
+White onion,Cebolla blanca
+Jalapeno pepper,Chile jalapeno
+Beetroot,Remolacha
+Parsnip,Chirivia
+White radish,Rabano blanco (daikon)
+Turnip,Nabo
+Spaghetti squash,Calabaza espagueti
+Tomato,Tomate
+Alfalfa sprouts,Brotes de alfalfa
+Borlotti beans,Alubias borlotti
+Butter beans,Alubias de mantequilla
+Runner beans,Judias de enrame / Judias verdes planas
+Broccoli,Brocoli
+Red cabbage,Col roja
+Greens,Verduras de hoja verde
+Mustard greens,Hojas de mostaza
+Chamomile,Manzanilla
+Marjoram,Mejorana
+Lettuce,Lechuga
+Red onion,Cebolla roja
+Shallot,Chalota
+Habanero pepper,Chile habanero
+Carrot,Zanahoria
+Rutabaga,Nabicol / Colinabo (varies)
+Pumpkin,Calabaza
+Spinach,Espinaca
+Watercress,Berro
+forearm,el antebrazo
+arm,el brazo
+corpse,el cadaver
+brain,el cerebro
+elbow,el codo
+heart,el corazon
+skull,el craneo
+neck,el cuello
+body,el cuerpo
+human body,el cuerpo humano
+finger,el dedo
+toe,"el dedo, el dedo del pie "
+tooth,el diente
+scrotum,el escroto
+skeleton,el esqueleto
+eyeball,el globo ocular
+shoulder,el hombro
+bone,el hueso
+earlobe,el lobolo de las orejas
+chin,"el menton, la barbilla "
+muscle,el musculo
+thigh,el muslo
+knuckle,el nudillo
+eye,el ojo
+navel,el ombligo
+shoulder blade,el omoplato
+eyelid,el parpado
+chest,el pecho
+hair,el pelo
+hair,"el pelo, el cabello "
+penis,el pene
+foot,el pie
+thumb,"el pulgar, el dedo gordo "
+breast,el seno
+armpit,"el sobaco, la axila "
+heel,el talon
+tendon,el tendon
+testicle,el testiculo
+eardrum,el timbano
+ankle,el tobillo
+torso,el torso
+uterus,"el utero, la matriz "
+blood vessel,"el vaso, el vaso sanguineo "
+abdomen,"elabdomen, el vientre "
+stomach,estomago
+arch,la arca
+artery,la arteria
+beard,la barba
+belly,la barriga
+mouth,la boca
+head,la cabeza
+hip,la cadera
+face,la cara
+eyebrow,la ceja
+waist,la cintura
+spine,la columna
+back,la espalda
+shin,la espinilla
+forehead,la frente
+throat,la garganta
+fingerprint,la huella digital
+groin,la ingle
+teardrop,la lagrima
+tongue,la lengua
+jaw,la mandibula
+hand,la mano
+cheek,la mejilla
+mind,la mente
+wrist,la muneca
+nose,la nariz
+ear,la oreja
+palm,la palma
+calf,la pantorrilla
+tummy,la panza
+eyelash,la pestana
+nipple,la pezon
+skin,la piel
+leg,la pierna
+sole,la planta
+pupil,la pupila
+knee,la rodilla
+kneecap,la rotula
+temple,la sien
+fingernail,la una
+toenail,"la una, la una del pie "
+thumbnail,"la una, la una del pulgar "
+vagina,la vagina
+vein,la vena
+nostril,la ventana de la nariz
+vertebrae,la vertebra
+whiskers,"las barbas, pelos de la barba "
+buttocks,las nalgas
+sideburns,las patillas
+biceps,los biceps
+teeth,los dientes
+intestines,los intestinos
+lips,los labios
+grandmother,abuela
+grandma,abuelita
+grandpa,abuelito
+grandfather,abuelo
+grandparents,abuelos
+wedding,boda
+close friend,compadre
+brother-in-law,cunado
+wife,esposa
+family,familia
+identical twin,gemelo
+sister,hermana
+step-brother,hermanastro
+brother,hermano
+siblings,hermanos
+daughter,hija
+son,hijo
+orphan,huerfano
+step-mother,madrastra
+mother,madre
+godmother,madrina
+husband,"marido, esposo "
+twin,mellizo
+granddaughter,nieta
+grandson,nieto
+bride,novia
+groom,novio
+daughter-in-law,nuera
+step-father,padrastro
+fiance,prometido
+girlfriend,novia
+boyfriend,novio
+father,padre
+parents,padres
+godfather,padrino
+godparents,padrinos
+relatives,parientes
+cousin,primo
+niece,sobrina
+nephew,sobrino
+mother-in-law,suegra
+father-in-law,suegro
+aunt,tia
+uncle,tio
+neighbors,vecinos
+widow,viuda
+widower,viudo
+son-in-law,yerno
+air conditioner,acondicionador de aire
+padlock,caldado
+deck,cubierta
+shower,"ducha, regadera "
+tree,el arbol
+bush,"el arbusto, el seto (hedge) "
+closet,el armario
+attic,el atico
+bathroom,el bano
+mailbox,"el buzon, el correo "
+road,el camino
+ceiling,el cielo
+dining room,el comedor
+bedroom,el cuarto
+bedroom,el dormitorio
+fireplace,el hogar
+furnace,"el horno, el calorifero "
+garden,el jardin
+yard,"el jardin, patio, yarda "
+hallway,el pasillo
+playground,el patio
+floor,"el piso, el nivel "
+porch,"el portico, porche, veranda "
+basement,el sotano
+shed,"el taller (workshop), la bodega (storage) "
+roof,el techo
+doorbell,"el timbre, la campanilla "
+cabinet,gabinete
+bedroom,la alcoba
+carpet,"la alfombra, carpeta "
+sidewalk,"la banqueta, acera "
+library,la biblioteca
+pantry,la bodega
+street,la calle
+alley,"la callejon, la callejuela "
+driveway,la calzada (de entrada)
+highway,la carretera
+house,la casa
+lock,la cerradura
+chimney,la chimenea
+kitchen,la cocina
+address,la direccion
+foyer,"la entrada, el vestibulo "
+key,la llave
+light,"la luz, (las luces) "
+doorknob,"la perilla, el tirador "
+door,la puerta
+gate,"la puerta, la entrada "
+bedroom,la recamara
+living room,la sala
+family room,"la sala, la sala de familia "
+fence,"la valla, la cerca, fensa "
+window,la ventana
+curtains,las cortinas
+stairs,las escaleras
+flowers,las flores
+rocks,"las rocas, las piedras (larger) "
+steps,"los escalones, (la escalon), las escaleras "
+furniture,los muebles
+patio,patio
+laundry room,"sitio del lavadero, lavanderia "
