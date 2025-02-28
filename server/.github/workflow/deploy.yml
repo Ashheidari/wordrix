@@ -1,0 +1,26 @@
+name: Deploy App
+
+on:
+  push:
+    branches:
+      - main  # Deploy only when pushing to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Deploy to VPS
+      uses: appleboy/ssh-action@v0.1.8
+      with:
+        host: ${{ secrets.VPS_HOST }}
+        username: ${{ secrets.VPS_USER }}
+        key: ${{ secrets.VPS_PR_KEY }}
+        script: |
+          cd wordix/
+          git pull origin main
+          docker-compose down
+          docker-compose up -d --build
