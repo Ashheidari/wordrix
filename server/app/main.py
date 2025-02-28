@@ -9,7 +9,7 @@ from .schemas import SimilarityRequest, SimilarityResponse
 
 import gensim
 
-app = FastAPI()
+app = FastAPI(root_path="/api/v1")
 
 word2vec_model  = gensim.models.Word2Vec.load("./word2vec.model")
 
