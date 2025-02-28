@@ -20,7 +20,7 @@ jobs:
         username: ${{ secrets.VPS_USER }}
         key: ${{ secrets.SSH_PR_KEY }}
         script: |
-          cd wordix/server/
+          cd wordrix/server/
           git pull origin main
           docker-compose down
           docker-compose up -d --build
