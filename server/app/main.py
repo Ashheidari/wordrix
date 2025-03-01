@@ -9,7 +9,9 @@ from .schemas import SimilarityRequest, SimilarityResponse
 
 import gensim
 
-app = FastAPI(root_path="/api/v1")
+app = FastAPI(root_path="/api/v1",  # This ensures FastAPI routes requests correctly
+    docs_url="/docs",      # Ensure Swagger UI is accessible
+    redoc_url="/redoc")
 
 word2vec_model  = gensim.models.Word2Vec.load("./word2vec.model")
 
