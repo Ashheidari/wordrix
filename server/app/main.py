@@ -1,6 +1,7 @@
 # app/main.py
 import random
 from fastapi import FastAPI, Depends, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from sqlmodel import Session, select
 
 from .models import Word, SQLModel
@@ -10,6 +11,16 @@ from .schemas import SimilarityRequest, SimilarityResponse
 import gensim
 
 app = FastAPI()
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],  
+    allow_headers=["*"],  
+)
+
 
 word2vec_model  = gensim.models.Word2Vec.load("./word2vec.model")
 
