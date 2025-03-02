@@ -37,7 +37,7 @@ def get_random_word(session: Session = Depends(get_session)):
     random_word = random.choice(words)
     return random_word
 
-
+@app.head('/similarity')
 @app.post("/similarity", response_model=SimilarityResponse)
 def get_similarity(request: SimilarityRequest):
     guess = request.guess_word
