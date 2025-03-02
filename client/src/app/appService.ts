@@ -15,7 +15,7 @@ export class ApiService {
 
   getSimilarity(targetWord: string, guessWord: string): Observable<any> {
     return this.http.post('http://wordrix.live/api/v1/similarity', {
-      "guess_word":guessWord,
+      "guess_word": guessWord,
       "generated_word": targetWord
     });
   }

@@ -12,6 +12,7 @@ export class AppComponent {
   hint: { word: string; score: number; isError: boolean } | null = null;
   showCongratulations: boolean = false;
   winningWord: string = '';
+  foreignWord: string = '';
   lastSubmission: { word: string; score: number } | null = null;
 
   guesses: { word: string; score: number }[] = [];
@@ -21,13 +22,14 @@ export class AppComponent {
     this.apiService.getWord().subscribe({
       next: response => {
         console.log('Success:', response);
-        this.winningWord = response;
+        this.winningWord = response.english.trim().toLowerCase();
+        this.foreignWord = response.spanish.trim().toLowerCase();
       },
       error: error => console.error('getWord Error:', error)
     });
   }
 
-  guessWord() {
+  async guessWord() {
     const trimmedInput = this.userInput.trim().toLowerCase();
 
     if (!trimmedInput) return; // Prevent empty guesses
@@ -35,10 +37,10 @@ export class AppComponent {
     if (this.guessMap.has(trimmedInput)) {
       this.message = `Duplicate word entered: "${trimmedInput}"`;
     } else {
-      const score = this.calculateScore(trimmedInput);
+      const score = await this.calculateScore(trimmedInput);
 
       this.guessMap.set(trimmedInput, score);
-      this.lastSubmission = { word: trimmedInput, score };
+      this.lastSubmission = {word: trimmedInput, score};
 
       if (score === 100 || this.winningWord == trimmedInput) {
         this.showCongratulations = true;
@@ -71,20 +73,21 @@ export class AppComponent {
   }
 
 
-  calculateScore(word: string): number {
-    // Replace this with actual similarity calculation
-    // return Math.floor(Math.random() * 100);
-
-    this.apiService.getSimilarity(this.winningWord, word).subscribe({
-      next: response => {
-        console.log('getSimilarity Success:', response);
-        return response.similarity;
-      },
-      error: error => console.error('getSimilarity Error:', error)
+  calculateScore(word: string): Promise<number> {
+    return new Promise((resolve, reject) => {
+      this.apiService.getSimilarity(this.winningWord, word).subscribe({
+        next: response => {
+          console.log('getSimilarity Success:', response);
+          resolve(response.similarity);
+        },
+        error: error => {
+          console.error('getSimilarity Error:', error);
+          reject(error);
+        }
+      });
     });
-
-    return -1;
   }
+
 
   resetGame() {
     this.showCongratulations = false;

@@ -9,6 +9,7 @@
 
 
   <div *ngIf="!showCongratulations">
+    <p>Guess the english word for {{ foreignWord }}</p>
 
     <!-- Listen for Enter key event -->
     <input [(ngModel)]="userInput" (keyup.enter)="guessWord()" placeholder="Enter a word..." />
