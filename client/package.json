@@ -1,5 +1,5 @@
 {
-  "name": "cmpe252-proj",
+  "name": "wordrix-client",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

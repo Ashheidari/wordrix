@@ -1,17 +1,13 @@
-# Use a lightweight Nginx image
-FROM nginx:alpine
+    # Stage 1: Build the Angular app
+    FROM node:latest as builder
+    WORKDIR /app
+    COPY package*.json ./
+    RUN npm install
+    COPY . .
+    RUN npm run build
 
-# Set the working directory inside the container
-WORKDIR /usr/share/nginx/html
-
-# Remove default Nginx static files
-RUN rm -rf ./*
-
-# Copy built AngularJS application from local machine to the container
-COPY ./dist /usr/share/nginx/html
-
-# Expose port 80 to be accessible outside the container
-EXPOSE 80
-
-# Start Nginx
-CMD ["nginx", "-g", "daemon off;"]
+    # Stage 2: Serve the app with Nginx
+    FROM nginx:latest
+    COPY --from=builder /app/dist/wordrix-client /usr/share/nginx/html
+    EXPOSE 80
+    CMD ["nginx", "-g", "daemon off;"]
