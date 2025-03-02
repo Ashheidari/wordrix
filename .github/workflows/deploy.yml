@@ -25,7 +25,7 @@ jobs:
           git pull origin main
           docker-compose down
           docker-compose up -d --build
-on:
+
   push:
     branches:
       - main  # Deploy only when pushing to the main branch
