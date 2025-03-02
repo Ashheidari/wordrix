@@ -1,0 +1,43 @@
+<div class="container">
+  <h1>Semantle Clone</h1>
+
+  <div *ngIf="showCongratulations" class="congrats-screen">
+    <h1>🎉 Congratulations! 🎉</h1>
+    <p>You guessed the correct word: <strong>{{ winningWord }}</strong></p>
+    <button (click)="resetGame()">Play Again</button>
+  </div>
+
+
+  <div *ngIf="!showCongratulations">
+
+    <!-- Listen for Enter key event -->
+    <input [(ngModel)]="userInput" (keyup.enter)="guessWord()" placeholder="Enter a word..." />
+    <button (click)="guessWord()">Submit</button>
+
+    <button (click)="getHint()">Get Hint</button>
+
+    <p *ngIf="hint" [ngClass]="hint.isError ? 'error-message' : 'hint-message'">
+      {{ hint.word }}
+      <span *ngIf="!hint.isError"> (Score: {{ hint.score }})</span>
+    </p>
+
+
+    <p *ngIf="message" class="error-message">{{ message }}</p>
+
+    <div *ngIf="lastSubmission" class="last-submission">
+      <h3>Last Submission</h3>
+      <p>Word: <strong>{{ lastSubmission.word }}</strong></p>
+      <p>Score: <strong>{{ lastSubmission.score }}</strong></p>
+    </div>
+  </div>
+  <h2>Guess History (Sorted by Score)</h2>
+  <ul>
+    <li *ngFor="let guess of guesses">
+      <strong>{{ guess.word }}</strong> - Score: {{ guess.score }}
+    </li>
+  </ul>
+</div>
+
+
+
+

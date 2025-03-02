@@ -1,0 +1,79 @@
+.container {
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+input {
+  padding: 8px;
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.congrats-screen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1000;
+}
+
+.congrats-screen h1 {
+  color: #28a745; /* Green for success */
+}
+
+.congrats-screen button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.congrats-screen button:hover {
+  background: #0056b3;
+}
+
+.error-message {
+  color: #d32f2f; /* Red color for visibility */
+  background-color: #ffebee; /* Light red background for contrast */
+  border: 1px solid #d32f2f; /* Matching red border */
+  padding: 8px 12px; /* Some padding for spacing */
+  border-radius: 4px; /* Rounded corners for a softer look */
+  font-size: 14px; /* Readable font size */
+  font-weight: bold; /* Make it stand out */
+  display: inline-block; /* Adjust width to content */
+  margin-top: 5px; /* Add some spacing from other elements */
+}
+
+.error-message {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hint-message {
+  color: green;
+  font-weight: bold;
+}
