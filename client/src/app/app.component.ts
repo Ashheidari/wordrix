@@ -21,7 +21,6 @@ export class AppComponent {
   constructor(private apiService: ApiService) {
     this.apiService.getWord().subscribe({
       next: response => {
-        console.log('Success:', response);
         this.winningWord = response.english.trim().toLowerCase();
         this.foreignWord = response.spanish.trim().toLowerCase();
       },

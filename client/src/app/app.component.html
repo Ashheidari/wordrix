@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Semantle Clone</h1>
+  <h1>Wordrix Game</h1>
 
   <div *ngIf="showCongratulations" class="congrats-screen">
     <h1>🎉 Congratulations! 🎉</h1>
@@ -9,7 +9,7 @@
 
 
   <div *ngIf="!showCongratulations">
-    <p>Guess the english word for {{ foreignWord }}</p>
+    <h3>Guess {{ foreignWord }} in English </h3>
 
     <!-- Listen for Enter key event -->
     <input [(ngModel)]="userInput" (keyup.enter)="guessWord()" placeholder="Enter a word..." />
