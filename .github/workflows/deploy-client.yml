@@ -7,7 +7,7 @@ on:
     paths:
       - 'client/**'
   
-  jobs:
+jobs:
   deploy_client:
     runs-on: ubuntu-latest
     steps:
