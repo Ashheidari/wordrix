@@ -42,4 +42,6 @@ def get_similarity(request: SimilarityRequest):
         )
     
     similarity_score = word2vec_model.wv.similarity(guess, generated)
-    return {"similarity": similarity_score}
+    #scale the the similarity score to [-1,1]
+    second_similarity_score = round(similarity_score*1.25)
+    return {"similarity": second_similarity_score}
