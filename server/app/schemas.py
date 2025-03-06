@@ -21,4 +21,4 @@ class HintRequest(BaseModel):
 
 class HintResponse(BaseModel):
     score:float
-    help:str
+    hint:str
