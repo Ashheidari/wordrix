@@ -6,7 +6,7 @@ from time import time
 
 
 words = pd.read_csv('wordlist.csv')
-wiki = pd.read_excel('wikipedia_sentences.xlsx')
+wiki = pd.read_csv('wikipedia_sentences_2.csv')
 
 
 # #save all words into a list so we can randomly choose the target word later
