@@ -55,7 +55,7 @@ def get_hint(request:HintRequest):
     best_score = request.score * 0.8
     english_word = request.generated_word
     similar_words = word2vec_model.wv.most_similar(english_word, topn=2000)
-    for i in range(len(similar_worexitds) - 1, -1,-1):
+    for i in range(len(similar_words) - 1, -1,-1):
         wrd,scr = similar_words[i]
         if (scr>best_score+0.06):
             print(round((time() - t), 2))
