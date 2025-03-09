@@ -27,7 +27,10 @@ def get_random_word(session: Session = Depends(get_session)):
     if not words:
         raise HTTPException(status_code=404, detail="No words found")
     random_word = random.choice(words)
-    return random_word
+    return {
+        english: random_word.english,
+        foreign_word: random_word.korean
+    }
 
 
 @app.post("/similarity", response_model=SimilarityResponse)
