@@ -22,7 +22,7 @@ export class AppComponent {
     this.apiService.getWord().subscribe({
       next: response => {
         this.winningWord = response.english.trim().toLowerCase();
-        this.foreignWord = response.spanish.trim().toLowerCase();
+        this.foreignWord = response.foreign_word.trim().toLowerCase();
       },
       error: error => console.error('getWord Error:', error)
     });
