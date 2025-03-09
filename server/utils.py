@@ -10,14 +10,14 @@ SQLModel.metadata.create_all(engine)
 
 # Define words
 
-words_list = pd.read_csv('wordlist.csv')
+words_list = pd.read_csv('korean_wordlist.csv')
 
 
 with Session(engine) as session:
     # Optional: clear existing data
     session.exec(text('DELETE FROM word'))
     for index,row in words_list.iterrows():
-        word = Word(english=row["English"], spanish=row["Spanish"])
+        word = Word(english=row["English"], korean=row["Korean"])
         session.add(word)
     session.commit()
 

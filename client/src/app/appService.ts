@@ -19,4 +19,11 @@ export class ApiService {
       "generated_word": targetWord
     });
   }
+
+  getHint(targetWord: string, highScore: number): Observable<any> {
+    return this.http.post('http://wordrix.live/api/v1/hint', {
+      "generated_word": targetWord,
+      "score": highScore
+    });
+  }
 }
