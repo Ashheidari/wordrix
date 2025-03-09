@@ -5,7 +5,9 @@ from sqlmodel import Session
 from sqlalchemy import text
 import pandas as pd
 
+
 # Create tables if they don't exist
+SQLModel.metadata.drop_all(engine)
 SQLModel.metadata.create_all(engine)
 
 # Define words
