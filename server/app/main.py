@@ -20,7 +20,7 @@ word2vec_model  = gensim.models.Word2Vec.load("./word2vec.model")
 # Create database tables if they do not exist
 SQLModel.metadata.create_all(engine)
 
-@app.get("/random_word", response_model=Word)
+@app.get("/random_word", response_model=RandomWordResponse)
 def get_random_word(session: Session = Depends(get_session)):
     statement = select(Word)
     words = session.exec(statement).all()
@@ -28,8 +28,8 @@ def get_random_word(session: Session = Depends(get_session)):
         raise HTTPException(status_code=404, detail="No words found")
     random_word = random.choice(words)
     return {
-        english: random_word.english,
-        foreign_word: random_word.korean
+        "english": random_word.english,
+        "foreign_word": random_word.korean
     }
 
 
