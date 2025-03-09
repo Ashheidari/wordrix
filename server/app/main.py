@@ -6,7 +6,7 @@ from sqlmodel import Session, select
 
 from .models import Word, SQLModel
 from .database import engine, get_session
-from .schemas import SimilarityRequest, SimilarityResponse, HintRequest, HintResponse
+from .schemas import SimilarityRequest, SimilarityResponse, HintRequest, HintResponse, RandomWordResponse
 
 import gensim
 
