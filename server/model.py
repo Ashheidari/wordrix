@@ -7,9 +7,7 @@ from time import time
 
 from nltk.stem import WordNetLemmatizer
 import nltk
-
 nltk.download('wordnet')
-
 
 wiki = pd.read_csv('wikipedia_sentences_2.csv')
 
