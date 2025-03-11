@@ -6,7 +6,7 @@ from sqlmodel import Session, select
 
 from .models import Word, SQLModel
 from .database import engine, get_session
-from .schemas import SimilarityRequest, SimilarityResponse, HintRequest, HintResponse
+from .schemas import SimilarityRequest, SimilarityResponse, HintRequest, HintResponse, RandomWordResponse
 
 import gensim
 
@@ -21,14 +21,17 @@ word2vec_model  = gensim.models.Word2Vec.load("./word2vec.model")
 
 SQLModel.metadata.create_all(engine)
 
-@app.get("/random_word", response_model=Word)
+@app.get("/random_word", response_model=RandomWordResponse)
 def get_random_word(session: Session = Depends(get_session)):
     statement = select(Word)
     words = session.exec(statement).all()
     if not words:
         raise HTTPException(status_code=404, detail="No words found")
     random_word = random.choice(words)
-    return random_word
+    return {
+        "english": random_word.english,
+        "foreign_word": random_word.korean
+    }
 
 
 @app.post("/similarity", response_model=SimilarityResponse)
