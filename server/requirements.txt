@@ -6,3 +6,4 @@ psycopg2-binary
 gensim
 openpyxl
 python-dotenv
+nltk

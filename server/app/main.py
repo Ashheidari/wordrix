@@ -18,6 +18,7 @@ app = FastAPI(root_path="/api/v1")
 word2vec_model  = gensim.models.Word2Vec.load("./word2vec.model")
 
 # Create database tables if they do not exist
+
 SQLModel.metadata.create_all(engine)
 
 @app.get("/random_word", response_model=Word)

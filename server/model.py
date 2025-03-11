@@ -1,11 +1,16 @@
 import gensim
 from gensim.utils import simple_preprocess
 import pandas as pd
+import numpy as np
+import random
 from time import time
 
+from nltk.stem import WordNetLemmatizer
+import nltk
+
+nltk.download('wordnet')
 
 
-words = pd.read_csv('wordlist.csv')
 wiki = pd.read_csv('wikipedia_sentences_2.csv')
 
 
@@ -40,13 +45,23 @@ for sentence in clean_sentences:
     sentence[:] = [word for word in sentence if word not in stop_words]
 
 
+#Lemmatization reduces words to their base form (e.g., "apples" → "apple", "berries" → "berry").
+lemmatizer = WordNetLemmatizer()
+clean_sentences = [
+    [lemmatizer.lemmatize(word) for word in simple_preprocess(sentence) if word not in stop_words]
+    for sentence in sentences_list
+]
+#
+random.seed(42)
+np.random.seed(42)
 
 #word2vec model from gensim library
 model = gensim.models.Word2Vec(
     window=5,
-    min_count=10,
-    workers=4,
-    vector_size=300,
+    min_count=7,
+    workers=1,
+    vector_size=120,
+    seed=42
 )
 
 #bulding one-hot-encoding of our words

@@ -1,7 +1,6 @@
 .venv/
 .DS_Store
 .env
-Untitled.ipynb
 .ipynb_checkpoints
 __pycache__/
 dist
