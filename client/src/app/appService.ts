@@ -10,18 +10,18 @@ export class ApiService {
   constructor(private http: HttpClient) {}
 
   getWord(): Observable<any> {
-    return this.http.get('http://wordrix.live/api/v1/random_word');
+    return this.http.get('https://wordrix.live/api/v1/random_word');
   }
 
   getSimilarity(targetWord: string, guessWord: string): Observable<any> {
-    return this.http.post('http://wordrix.live/api/v1/similarity', {
+    return this.http.post('https://wordrix.live/api/v1/similarity', {
       "guess_word": guessWord,
       "generated_word": targetWord
     });
   }
 
   getHint(targetWord: string, highScore: number): Observable<any> {
-    return this.http.post('http://wordrix.live/api/v1/hint', {
+    return this.http.post('https://wordrix.live/api/v1/hint', {
       "generated_word": targetWord,
       "score": highScore
     });
