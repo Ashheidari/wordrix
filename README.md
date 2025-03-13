@@ -55,3 +55,9 @@ Wordrix is a project that integrates a neural network-based backend with a clien
     ```bash
     docker compose up -d
     ```
+
+## Additional Information
+- The model-notebook.ipynb file is provided as a convenience for those who prefer to work in a notebook environment.
+- The extract-dataset.ipynb file is designed to automate the process of web scraping data for the project.
+## Contributing
+- Contributions are welcome! Feel free to fork the repository and submit pull requests. For major changes, please open an issue first to discuss your ideas.
