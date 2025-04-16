@@ -19,6 +19,10 @@ export class AppComponent {
   guessMap: Map<string, number> = new Map(); // Fast lookup map
 
   constructor(private apiService: ApiService) {
+    this.loadNewWord()
+  }
+
+  loadNewWord(){
     this.apiService.getWord().subscribe({
       next: response => {
         this.winningWord = response.english.trim().toLowerCase();
@@ -26,8 +30,8 @@ export class AppComponent {
       },
       error: error => console.error('getWord Error:', error)
     });
-  }
 
+  }
   async guessWord() {
     const trimmedInput = this.userInput.trim().toLowerCase();
 
@@ -95,5 +99,7 @@ export class AppComponent {
     this.message = '';
     this.userInput = '';
     this.hint = null;
+    this.guessMap.clear();
+    this.loadNewWord()
   }
 }
