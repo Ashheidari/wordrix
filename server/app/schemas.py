@@ -22,3 +22,7 @@ class HintRequest(BaseModel):
 class HintResponse(BaseModel):
     score:float
     hint:str
+
+class RandomWordResponse(BaseModel):
+    english: str
+    foreign_word: str

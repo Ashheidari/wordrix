@@ -26,7 +26,7 @@ export class AppComponent {
     this.apiService.getWord().subscribe({
       next: response => {
         this.winningWord = response.english.trim().toLowerCase();
-        this.foreignWord = response.spanish.trim().toLowerCase();
+        this.foreignWord = response.foreign_word.trim().toLowerCase();
       },
       error: error => console.error('getWord Error:', error)
     });
@@ -43,7 +43,7 @@ export class AppComponent {
       const score = await this.calculateScore(trimmedInput);
 
       this.guessMap.set(trimmedInput, score);
-      this.lastSubmission = {word: trimmedInput, score};
+      this.lastSubmission = {word: trimmedInput, score: score};
 
       if (score === 100 || this.winningWord == trimmedInput) {
         this.showCongratulations = true;
@@ -58,21 +58,26 @@ export class AppComponent {
     this.userInput = ''; // Reset input field
   }
 
-  getHint(): void {
+  async getHint(): Promise<void> {
     if (this.guesses.length === 0) {
       this.hint = { word: "No guesses yet! Try guessing first.", score: -1, isError: true };
       return;
     }
 
     // Find a word in the list with a higher score than the highest guessed score
-    const hint = { word: "hint unavailable", score: -1}
-    console.log(`sam hint ${JSON.stringify(hint)}`);
-
-    if (hint) {
-      this.hint = { ...hint, isError: false };
-    } else {
-      this.hint = { word: "No hints available. Keep guessing!", score: -1, isError: true };
-    }
+    await this.apiService.getHint(this.winningWord, this.guesses[0].score).subscribe({
+      next: response => {
+        console.log('getHint Success:', response);
+        this.hint = { word: response.hint, isError: false, score: response.score };
+        this.guessMap.set(response.hint, response.score);
+        this.guesses.push({word: response.hint, score: response.score});
+        this.guesses.sort((a, b) => b.score - a.score); // Sort from highest to lowest
+      },
+      error: error => {
+        console.error('getHint Error:', error);
+        this.hint = { word: "No hints available. Keep guessing!", score: -1, isError: true };
+      }
+    });
   }
 
 
